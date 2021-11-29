@@ -1,2 +1,7 @@
-// Faça o exercício dos PARÁGRAFOS aqui
-// Este arquivo AINDA NÃO ESTÁ INCLUÍDO no arquivo HTML
+function verificaP(event) {
+    if(event.parentNode.classList.contains('expandido')) {
+        event.parentNode.classList.remove('expandido');
+    } else {
+        event.parentNode.classList.add('expandido');
+    }
+}

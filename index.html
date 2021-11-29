@@ -59,7 +59,7 @@
               <label>
                 Resultado: <input type="number" id="resultado" disabled>
               </label>
-              <button id="calcular">Calcular \(F_{grav}\)</button>
+              <button id="calcular" onclick="calculaFormula()">Calcular \(F_{grav}\)</button>
             </div>
           </div>
         </div>
@@ -78,8 +78,8 @@
         </p>
         <div id="galeria">
           <img src="http://fegemo.github.io/cefet-web/images/osiris/01-modelo-artistico-da-sonda.webp" id="slide">
-          <button id="anterior" class="navegar">Anterior</button>
-          <button id="proximo" class="navegar">Próximo</button>
+          <button id="anterior" onclick="slide(false)" class="navegar">Anterior</button>
+          <button id="proximo" onclick="slide(true)" class="navegar">Próximo</button>
         </div>
       </article>
 
@@ -88,7 +88,7 @@
         <h1>Sobre Aliens</h1>
         <h2>De onde eles vêm</h2>
         <p>
-          <button class="botao-expandir-retrair" type="button">+</button>
+          <button class="botao-expandir-retrair" onclick="verificaP(event.currentTarget)" type="button">+</button>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in
           dignissim augue. Nunc a erat ac nisl imperdiet dapibus sit amet
           in ipsum. Suspendisse scelerisque in dui in placerat. Praesent
@@ -103,7 +103,7 @@
         </p>
         <h2>O que eles querem</h2>
         <p>
-          <button class="botao-expandir-retrair" type="button">+</button>
+          <button class="botao-expandir-retrair" onclick="verificaP(event.currentTarget)" type="button">+</button>
           Cras velit mauris, suscipit ac blandit sit amet, scelerisque eget
           sem. Aenean purus leo, tincidunt consectetur libero id, euismod
           ultrices diam. Nam erat purus, faucibus ut nisl in, facilisis
@@ -119,7 +119,7 @@
         </p>
         <h2>Para onde eles vão</h2>
         <p>
-          <button class="botao-expandir-retrair" type="button">+</button>
+          <button class="botao-expandir-retrair" onclick="verificaP(event.currentTarget)" type="button">+</button>
           Vestibulum auctor orci lacus, sit amet pretium mauris viverra
           nec. Nullam eu maximus augue. Phasellus in metus sit amet sem dapibus
           iaculis ut at odio. Cras turpis dui, lacinia non posuere quis,
@@ -132,7 +132,7 @@
         </p>
         <h2>O que comem</h2>
         <p>
-          <button class="botao-expandir-retrair" type="button">+</button>
+          <button class="botao-expandir-retrair" onclick="verificaP(event.currentTarget)" type="button">+</button>
           Quisquam veritatis dicta eligendi fuga asperiores tenetur, laborum 
           repudiandae consequatur dignissimos corporis excepturi minus voluptas
           consequuntur et dolorem odio optio ab error. Soluta vitae eaque,
@@ -145,7 +145,7 @@
         </p>
         <h2>Sexta-feira, no Globo Repórter</h2>
         <p>
-          <button class="botao-expandir-retrair" type="button">+</button>
+          <button class="botao-expandir-retrair" onclick="verificaP(event.currentTarget)" type="button">+</button>
           Pariatur neque rerum fuga similique? Recusandae suscipit esse ex
           eos corrupti, alias deserunt dignissimos cum laudantium dolorum
           quo ut enim libero nam? Harum, illo! Ipsa fuga non sit placeat
@@ -163,6 +163,9 @@
     <!-- navegacao: código que faz a "navegação em abas" da página -->
     <script src="navegacao.js"></script>
     <!-- inclua os arquivos dos exercícios aqui: -->
+    <script src="exercicio1.js"></script>
+    <script src="exercicio2.js"></script>
+    <script src="exercicio3.js"></script>
 
 
 
